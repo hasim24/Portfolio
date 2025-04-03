@@ -7,7 +7,7 @@ import Skills from "../Pages/Skills";
 import Experience from "../Pages/Experience";
 import Project from "../Pages/Projects/Project";
 import Footer from "../Components/Footer/Footer";
-import logo from "../assets/vector.png";
+import logo from "../assets/Skills/logo.png";
 
 const MainLayout = () => {
   return (

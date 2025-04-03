@@ -1,9 +1,10 @@
-import { Flex, Icon, Link, Spacer, Tooltip, Text } from "@chakra-ui/react";
+import { Flex, Icon, Link, Spacer, Tooltip, Image } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { FaCogs } from "react-icons/fa";
 import { IoHomeSharp, IoPerson } from "react-icons/io5";
 import { MdOutlineWork } from "react-icons/md";
+import logo from "../../assets/Skills/logo.png";
 
 const Header = () => {
   const [pathHash, setPathHash] = useState(window.location.hash);
@@ -43,12 +44,12 @@ const Header = () => {
       position={{ base: "fixed", md: "relative" }}
       bottom={{ base: 2, md: "" }}
     >
-      <Text
-        fontSize={{ lg: 50, md: 40, base: 28 }}
-        fontWeight={600}
-      >
-        <span style={{ color: "#33FFCC"}}>H</span>ashim
-      </Text>
+      <Image
+        src={logo}
+        alt="logo"
+        w={{ md: 100, base: 90 }}
+        objectFit={"contain"}
+      />
 
       <Spacer display={{ base: "none", md: "block" }} />
       {/* Nav tabs */}

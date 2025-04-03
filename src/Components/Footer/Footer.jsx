@@ -1,5 +1,5 @@
 import { Flex, Icon, Image, Text } from "@chakra-ui/react";
-import logo from "../../assets/vector.png";
+import logo from "../../assets/Skills/logo.png";
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CgMail } from "react-icons/cg";
@@ -20,10 +20,12 @@ const Footer = () => {
       mb={{ base: 20, md: 0 }}
       w={"100%"}
     >
-      <Text fontSize={{ lg: 30, md: 20, base: 28 }} fontWeight={600}>
-        <span style={{ color: "#33FFCC" }}>H</span>
-        <span style={{ color: "#FFF" }}>ashim</span>
-      </Text>
+      <Image
+        src={logo}
+        alt="logo"
+        w={{ md: 100, base: 90 }}
+        objectFit={"contain"}
+      />
       {/* Copyright */}{" "}
       <Text color={"white"} fontSize={{ md: 16, base: 14 }}>
         © {year} Hashim M. All rights reserved.{" "}
