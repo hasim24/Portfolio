@@ -47,7 +47,9 @@ const Header = () => {
       <Image
         src={logo}
         alt="logo"
-        w={{ md: 100, base: 90 }}
+        w={100}
+        h={100}
+        display={{ base: "none", md: "block" }}
         objectFit={"contain"}
       />
 
